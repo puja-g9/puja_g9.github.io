@@ -1,0 +1,740 @@
+<html lang="en">
+
+<head>
+
+<style>
+:root {
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+}
+html {
+    height: 100%;
+    background-repeat: no-repeat;
+    position: relative
+	}
+body {
+    height: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+body {
+    font-family: system-ui, -apple-system, segoe ui, Roboto, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji;
+}
+input {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+	pointer-events: all;
+}
+summary {
+    display: list-item;
+}
+h1, h2, h3, p {
+    margin: 0;
+	pointer-events: all;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	pointer-events: all;
+}
+html {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    line-height: 1.5;
+}
+body {
+    font-family: inherit;
+    line-height: inherit;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: initial;
+}
+img {
+    border-style: solid;
+	pointer-events: all;
+}
+input::-moz-placeholder {
+    color: #a1a1aa;
+	pointer-events: all;
+}
+input:-ms-input-placeholder {
+    color: #a1a1aa;
+	pointer-events: all;
+}
+input::placeholder {
+    color: #a1a1aa;
+	pointer-events: all;
+}
+h1, h2, h3 {
+    font-size: inherit;
+    font-weight: inherit;
+	pointer-events: all;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+	pointer-events: all;
+}
+input {
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+	pointer-events: all;
+}
+img, svg {
+    display: block;
+    vertical-align: middle;
+	pointer-events: all;
+}
+img {
+    max-width: 100%;
+    height: auto;
+	pointer-events: all;
+}
+:root {
+    --color-background: 46,  52,  64;
+    --color-on-background: 236,  239,  244;
+    --color-variant-on-background-subtle: 229,  233,  240,  1;
+    --color-variant-on-background-muted: 183,  194,  215,  1;
+    --color-variant-on-background-active: 229,  233,  240,  1;
+    --color-variant-on-background-hover: 216,  222,  233,  1;
+    --color-variant-on-background-focus: 183,  194,  215,  1;
+    --color-surface: 59,  66,  82;
+    --color-on-surface: 236,  239,  244;
+    --color-foreground: 67,  76,  94;
+    --color-on-foreground: 236,  239,  244;
+    --color-attention-primary: 143,  188,  187;
+    --color-attention-secondary: 136,  192,  208;
+    --color-attention-tertiary: 129,  161,  193;
+    --color-attention-quaternary: 94,  129,  172;
+}
+@media(prefers-color-scheme:light) {
+    :root {
+    --color-background: 236,  239,  244;
+    --color-on-background: 76,  86,  106;
+    --color-variant-on-background-subtle: 76,  86,  106,  1;
+    --color-variant-on-background-muted: 97,  110,  136,  1;
+    --color-variant-on-background-active: 59,  66,  82,  1;
+    --color-variant-on-background-hover: 67,  76,  94,  1;
+    --color-variant-on-background-focus: 76,  86,  106,  1;
+    --color-surface: 229,  233,  240;
+    --color-on-surface: 67,  76,  94;
+    --color-foreground: 216,  222,  233;
+    --color-on-foreground: 59,  66,  82;
+    --color-attention-primary: 129,  161,  193;
+    --color-attention-secondary: 94,  129,  172;
+    --color-attention-tertiary: 136,  192,  208;
+    --color-attention-quaternary: 143,  188,  187;
+    --color-error: 191,  97,  106;
+    --color-on-error: 59.7806649,  24.216335099999995,  27.621430506383;
+    --color-danger: 208,  135,  112;
+    --color-on-danger: 87.28203239999999,  42.729170625,  28.69196760000001;
+    --color-warning: 235,  203,  139;
+    --color-on-warning: 144.97850069999998,  104.98716689999998,  25.004499300000006;
+    --color-success: 163,  190,  140;
+    --color-on-success: 61.585725239999974,  80.47593450000001,  45.49406549999999;
+    --color-uncommon: 180,  142,  173;
+    --color-on-uncommon: 46,  52,  64;
+    --color-polar-night-0: 46,  52,  64;
+    --color-polar-night-1: 59,  66,  82;
+    --color-polar-night-2: 67,  76,  94;
+    --color-polar-night-3: 76,  86,  106;
+    --color-snow-storm-0: 216,  222,  233;
+    --color-snow-storm-1: 229,  233,  240;
+    --color-snow-storm-2: 236,  239,  244;
+    --color-frost-0: 143,  188,  187;
+    --color-frost-1: 136,  192,  208;
+    --color-frost-2: 129,  161,  193;
+    --color-frost-3: 94,  129,  172;
+    --color-aurora-0: 191,  97,  106;
+    --color-aurora-1: 208,  135,  112;
+    --color-aurora-2: 235,  203,  139;
+    --color-aurora-3: 163,  190,  140;
+    --color-aurora-4: 180,  142,  173;
+}
+}@media(prefers-color-scheme:dark) {
+    :root {
+    --color-background: 46,  52,  64;
+    --color-on-background: 236,  239,  244;
+    --color-variant-on-background-subtle: 229,  233,  240,  1;
+    --color-variant-on-background-muted: 183,  194,  215,  1;
+    --color-variant-on-background-active: 229,  233,  240,  1;
+    --color-variant-on-background-hover: 216,  222,  233,  1;
+    --color-variant-on-background-focus: 183,  194,  215,  1;
+    --color-surface: 59,  66,  82;
+    --color-on-surface: 236,  239,  244;
+    --color-foreground: 67,  76,  94;
+    --color-on-foreground: 236,  239,  244;
+    --color-attention-primary: 143,  188,  187;
+    --color-attention-secondary: 136,  192,  208;
+    --color-attention-tertiary: 129,  161,  193;
+    --color-attention-quaternary: 94,  129,  172;
+}
+}body {
+    background-color: rgba(var(--color-background), 1);
+    color: rgba(var(--color-on-background), 1);
+}
+.markdown a, a:hover {
+    color: rgba(var(--color-attention-secondary), 1);
+}
+a:hover {
+    background-color: rgba(var(--color-surface), 1);
+    border-radius: .125rem;
+}
+.markdown blockquote {
+    background-color: rgba(var(--color-foreground), 1);
+    border-color: rgba(var(--color-on-foreground), 1);
+}
+.markdown td, .markdown th {
+    background-color: rgba(var(--color-foreground), 1);
+    border-color: rgba(var(--color-surface), 1);
+}
+.markdown th {
+    background-color: rgba(var(--color-surface), 1);
+}
+
+
+main {
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    max-width: 48rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+h1 {
+    font-size: 1.875rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+h2 {
+    font-size: 1.5rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+h3 {
+    font-size: 1.25rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+.markdown {
+    font-size: 1.125rem;
+}
+.markdown h1, .markdown h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.markdown p {
+    margin-bottom: 1rem;
+}
+.markdown ul, .markdown ol {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+.markdown li>p, .markdown li>ul, .markdown li>ol {
+    margin-bottom: 0;
+}
+.markdown ol {
+    list-style-type: decimal;
+}
+.markdown ul {
+    list-style-type: disc;
+}
+.markdown blockquote {
+    border-left-width: 4px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    padding: .5rem;
+    font-style: italic;
+}
+.markdown blockquote>p {
+    margin-bottom: 0;
+}
+.markdown table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: auto;
+    width: 100%}
+.markdown td, .markdown th {
+    border-width: 1px;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+.block {
+    display: block;
+}
+.flex {
+    display: flex;
+}
+.hidden {
+    display: none;
+}
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.items-center {
+    align-items: center;
+}
+.self-stretch {
+    align-self: stretch;
+}
+.justify-center {
+    justify-content: center;
+}
+.font-normal {
+    font-weight: 400;
+}
+.font-bold {
+    font-weight: 700;
+}
+.h-4 {
+    height: 1rem;
+}
+.text-xs {
+    font-size: .75rem;
+}
+.text-sm {
+    font-size: .875rem;
+}
+.text-base {
+    font-size: 1rem;
+}
+.text-lg {
+    font-size: 1.125rem;
+}
+.text-5xl {
+    font-size: 3rem;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mt-2 {
+    margin-top: .5rem;
+}
+.mb-4 {
+    margin-bottom: 1rem;
+}
+.p-4 {
+    padding: 1rem;
+}
+.px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.pt-5 {
+    padding-top: 1.25rem;
+}
+.pt-8 {
+    padding-top: 2rem;
+}
+.pt-10 {
+    padding-top: 2.5rem;
+}
+.pt-32 {
+    padding-top: 8rem;
+}
+* {
+    --tw-shadow: 0 0 #0000;
+}
+* {
+    --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59,  130,  246,  0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+}
+.fill-current {
+    fill: currentColor;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.italic {
+    font-style: italic;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.w-4 {
+    width: 1rem;
+}
+.w-full {
+    width: 100%}
+@-webkit-keyframes spin {
+    to {
+    transform: rotate(360deg);
+}
+
+
+
+}@keyframes spin {
+    to {
+    transform: rotate(360deg);
+}
+}@keyframes ping {
+    75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+}
+}@keyframes pulse {
+    50% {
+    opacity: .5;
+}
+}@keyframes bounce {
+    0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(.8, 0, 1, 1);
+    animation-timing-function: cubic-bezier(.8, 0, 1, 1);
+}
+50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, .2, 1);
+    animation-timing-function: cubic-bezier(0, 0, .2, 1);
+}
+}@media(min-width:640px) {
+    .sm\: space-x-2>:not([hidden])~:not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+
+.sm\:block {
+    display: block;
+}
+.sm\:flex {
+    display: flex;
+}
+.sm\:hidden {
+    display: none;
+}
+.sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.sm\:mt-0 {
+    margin-top: 0;
+}
+.sm\:mt-16 {
+    margin-top: 4rem;
+}
+.sm\:w-auto {
+    width: auto;
+}
+}@media(min-width:768px) {
+    .md\: mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+}@media(min-width:1024px) {
+    .lg\: mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+}
+
+var clientHeight = document.getElementById('toplayer').clientHeight;
+console.log(height)
+
+$text: #fff;
+$link: #e34234;
+$link-hover: #ba160c;
+$background: #00356B;
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  height: 100%; 
+  align-self: center;
+  width: 100%;
+  height: 150%;
+  background: $background
+  
+}
+
+.text {
+  position: absolute;
+  align-self: center;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  color: $text;
+  max-width: 90%;
+  padding: 2em 3em;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 0px 2px #131415;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+a,
+a:visited {
+  color: $link;
+  transition: 0.25s;
+}
+
+a:hover,
+a:focus {
+  color: $link-hover;
+}
+
+.w-full_main {
+    width: 100%;
+	position: absolute;
+	pointer-events: none;
+	}
+@-webkit-keyframes spin {
+    to {
+    transform: rotate(360deg);
+}
+
+}
+
+
+</style>
+
+
+
+</head>
+
+
+
+
+<body>
+
+<div id="particles-js">
+
+
+<div id="toplayer" class="w-full_main">
+<header class="w-full px-8 pt-5">
+<nav class="flex flex-row-reverse items-center flex-wrap text-lg">
+<input id="nav-toggle" type="checkbox" class="hidden">
+<label id="hide-button" for="nav-toggle" class="flex items-center hidden">
+<svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<text>Menu</text><polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)">
+</polygon></svg></label>
+
+<ul id="nav-menu" class="mx-auto w-full sm:flex sm:mx-auto sm:w-auto sm:block text-right mt-2 sm:mt-0 sm:space-x-2 lowercase hidden">
+<li>
+<a href="https://lawzava.com/" class="p-4 font-bold">
+<span>Home</span>
+</a>
+</li>
+
+<li>
+<a href="https://lawzava.com/about/" class="p-4">
+<span>About</span>
+</a>
+</li>
+
+<li>
+<a href="https://lawzava.com/blog/" class="p-4">
+<span>Blog</span>
+</a>
+</li>
+
+<li>
+<a href="https://lawzava.com/contact/" class="p-4">
+<span>Contact</span>
+</a>
+</li>
+
+</ul>
+</nav>
+
+</header>
+
+<main class="w-full px-8 pt-5">
+
+<div class="text-center pt-10">
+
+<article class="markdown"><h5 id="tldr">TL;DR</h5><p>We’ve carried out a series of daily tasks on TOP 20 Linux distros as well as Windows and macOS to test whether Linux has a chance to compete in daily use space. And the answer is - Yes since neither Mac nor Windows came on the top. There is still a very long way to go for all of them, however.</p><h3 id="motivation">Motivation</h3><p>I’ve been a Linux evangelist and a strong user (as in regular usage, not just for servers) for almost two decades since I’ve been introduced to Mandrake Linux with a mysterious penguin in the background.</p><p>That’s why I’ve been the one who consistently annoys family, friends,
+and colleagues until they’re forced to give up their bellowed non-Linux life.</p><p>Of course, the change is often difficult since they are thrown in a never-before-seen world with never-before-understood rules. Being a CLI-first person, I often overlook what is so hard about it.</p><p>But over the years, I’ve received fewer and fewer complaints, and since there have been almost no cases of people going back unless it’s for work, I’ve decided to do a proper test to see whether someone who’s not a technician can live a proper Linux life.</p><h3 id="the-subject">The Subject</h3><p>I wanted the subject to be someone with little-to-no technical skills/background as well as available for close supervision during the tests (and quarantine) to get accurate results.</p><p>So the background of the chosen subject is: a human, an illustrator, a long-time Mac-only user, spends 40% of work drawing on paper, 30% on Adobe suite and 30% on social media, saw me working numerous times and referred to the terminal as a “mysterious black window,” never installed an OS before, required assistance towards installing Adobe software, not a native English speaker.</p><p>What I want to emphasize is that the subject is not a tech-friendly person at all.</p><p>So before we started I had to teach the subject a few simple things: what ISO is, how to use Etcher ( <a href="https://www.balena.io/etcher/" title="Etcher" target="_blank" rel="noopener">https://balena.io</a>
+) and how to select USB as a bootable device.</p><p>No further advice or assistance has been given.</p><p>Of course, we need to put a disclaimer here - the subject is human after all and humans learn over time so that test results in similar desktop environments or derivatives can be influenced by previous experience, but from the obvious dissatisfaction that has been witnessed, I can confirm that previous experience has not benefited too much.</p><h3 id="rules">Rules</h3><p>General rules for making the results more relevant:</p><ul><li>Any outside support to solve a problem is forbidden, including other people, blogs, and search engines (except for the chrome installation task). Only out-of-box resources shall be used.</li><li>Terminal use is also prohibited. Some apps provide terminal-based installation instructions - no one can expect newbies to rely on a “mysterious black box” to perform simple tasks.</li><li>If a single task reaches the 20min mark, usage of a search engine is permitted.</li><li>If a single task reaches the 60min mark, the entire distro is deemed unusable and the test group is considered to have failed.</li></ul><h3 id="tasks">Tasks</h3><p>There are 16 tasks in total:</p><ul><li>Download ISO | tests web navigation UX, mirrors availability, clarity of choices, ISO size</li><li>Flash ISO to USB | tests ISO size and file count</li><li>Install encrypted system | tests installation process experience, encryption can be omitted only if it is not available</li><li>Change wallpaper | tests basic personalization interface and options</li><li>Play song on Spotify desktop | tests support for popular proprietary software, the initial internet connection</li><li>Send message from telegram desktop | tests support for popular proprietary software</li><li>Check email on google chrome | google chrome is rarely available in the app stores so this is the only exception where the installer can be downloaded, tests support for installing downloaded packages</li><li>Create a PDF document with your name in it | tests initial tools availability for document editing</li><li>Take a screenshot | tests initial tools availability for a screenshot</li><li>Add a circle in the screenshot | tests initial tools availability for basic image editing</li><li>Resize or crop the picture to 100x100px | tests initial tools availability for basic image editing</li><li>Rename the picture to “my New Pic” | tests interface behavior for basic file adjustment</li><li>Set picture as a user profile picture | tests interface availability for basic user personalization</li><li>Install Steam | tests support for popular software</li><li>Delete steam | tests ease of cleanup</li><li>Power off the computer | tests power off clarity, availability, and pre-shutdown behavior</li></ul><p>Each task is measured by the length of time it took to complete with additional subject scores for general UX (system intuitiveness, tool availability, etc.) and UI (out-of-box interface esthetics).</p><p>This will split evaluation into 4 total categories:</p><ul><li>The time required to set up (installing the system on the device)</li><li>The time required to complete tasks (all other tasks apart installation)</li><li>UX Score (subject to subject’s subjective opinion)</li><li>UI Score (subject to subject’s subjective opinion)</li></ul><h3 id="evaluation">Evaluation</h3><p>Each system is ranked from the best to the worst in each category and given a point for the respective reverse position (1-22). If the scores are equal, the maximum is given for the respective placement and continues from the minimum (e.g. 18, 17, 16, 16, 16, 13, 12, 11).</p><h3 id="tools">Tools</h3><p>To be completely consistent with the test results, the same machine and network were used for all tests.</p><p>Machine: Thinkpad T480s (i5-8250U, 256GB Samsung 970 Plus NVMe, 16GB RAM).
+For macOS installation late-2017 MBP (i5, 128GB, 8GB RAM) was used.</p><p>Network: A dedicated (all other devices were disconnected) 100mbps, pretty stable, always through LAN.</p><h3 id="data-set">Data Set</h3><p>The data set consisted of Windows and macOS as a control group, then picked up TOP 20 distros from DistroWatch ( <a href="https://distrowatch.com/" title="DistroWatch" target="_blank" rel="noopener">https://distrowatch.com</a>
+) over 12 months, removed Arch as it would require CLI knowledge and included Regolith ( <a href="https://regolith-linux.org" title="Regolith Linux" target="_blank" rel="noopener">https://regolith-linux.org</a>
+) instead (just because it’s my go-to distro).</p><p>So the final list is macOS, Windows, MX Linux, Manjaro, Mint, Debian, Ubuntu, Elementary, Solus, Fedora, Zorin, Deepin, Antix, KDE Neon, OpenSUSE, CentOS, Pop OS, ArcoLinux, PCLinuxOS, Kali, ReactOS, Regolith.</p><p>I am aware that most of the tasks are software-specific activity, so the test is mostly about OS compatibility with day-to-day apps and means to obtain them.</p><h3 id="what-went-wrong">What Went Wrong</h3><p>Since all tasks were expected to go smoothly by default, I have only noted failures/pain points when using a particular system that I noticed when observing the subject.</p><p>I know there are workarounds for some problems, different paths and so on.
+But if they have not been discovered by the subject in time, they are too hidden from the user and are therefore considered invalid.</p><p>So the results are as follows:</p><h4 id="failed-tests">Failed Tests:</h4><h5 id="antix">Antix</h5><ul><li>Installation sometimes froze during install, if it succeeded it never booted (tried all grub options).</li></ul><h5 id="opensuse">openSUSE</h5><ul><li>Connecting to already attached LAN cable was hell, still required to manually “configure” the connection to use it, even if “automatic” mode was selected.</li><li>The struggle to find Spotify ended up in multiple restarts and even the “Discovery" app store failed to launch.</li></ul><h5 id="centos">CentOS</h5><ul><li>There was no progress at all with finding Spotify - no 3rd party repositories or snap or Flatpak were available.</li></ul><h5 id="arcolinux">ArcoLinux</h5><ul><li>Software installation utility started crashing because of some file conflict, failed to find any way to repair through GUI.</li></ul><h5 id="kali">Kali</h5><ul><li>No software managing app was available, and it was not possible to install one without CLI usage.</li></ul><h5 id="reactos">ReactOS</h5><ul><li>Download was at ~70% when it hit the 60min mark (SourceForge auto-mirror &amp; no issues with the network).</li></ul><h4 id="successful-tests">Successful Tests:</h4><h5 id="macos">macOS</h5><ul><li>Installation took a long time. As I understood it is a general issue with all macOS installs.</li><li>When installing Telegram it was unclear what “drag to Applications” meant after mounting the downloaded image. Telegram from the app store was not being installed for some reason, no errors were shown.</li></ul><h5 id="windows">Windows</h5><ul><li>During the installation a permission to collect/user personal data was asked too many times (at least 8), it was annoying.</li><li>When powering off the system, surprise - windows update was enforced without a visible option to bypass it.</li></ul><h5 id="mx-linux">MX Linux</h5><ul><li>It was unclear how to find anything remotely close to the app store, the subject kept bumping into the software update page when finally found the “software installer”.</li><li>When installing anything live-action log with hard to comprehend errors was too overwhelming.</li><li>It took a long time until the “Flatpak" tab was discovered as a software source. It’s confusing when it is the first time seeing this word.</li></ul><h5 id="manjaro">Manjaro</h5><ul><li>It was very confusing and time-consuming to find out that the desired apps are either in “AUR” or “Snap” sections, which from the names does not sound like places to find apps.</li></ul><h5 id="mint">Mint</h5><ul><li>Setting the profile picture when selecting the file redirected to /root by default, not /home/$USER so it took time to find the required file in the file system.</li></ul><h5 id="debian">Debian</h5><ul><li>It was a long fight but essentially to install a Spotify app without using CLI you have to install the “Discovery" app store from which you need to install a “snap plugin for gnome store" and then go back to gnome store to find Spotify.</li></ul><h5 id="ubuntu">Ubuntu</h5><ul><li>The default ISO mirror location is not optimized. Custom mirror selection is not obvious.</li></ul><h5 id="elementary">Elementary</h5><ul><li>Changing the background is impossible through a usual right-click on the desktop and no app handles remotely close to that, the journey to the system settings for this simple matter was a painful one.</li><li>After downloading chrome .deb, trying to open it (double-click) does not bring the window of the installer to the front if it’s already open (discovery app store) - this was especially frustrating.</li><li>No default office suite is available</li></ul><h5 id="solus">Solus</h5><ul><li>Install process hung up on detecting local storage devices. After restarting and failing multiple times it finally worked (same settings).</li><li>Spotify was available in the software app under 3rd party apps but after installing it did not appear anywhere so it was impossible to launch until “check for updates” was pressed and it finally appeared in the app list.</li><li>After installing telegram all apps stopped working nothing would open until after the complete reboot of the system</li><li>No native tools available for image editing since using LibreOffice Draw kept crashing.</li></ul><h5 id="fedora">Fedora</h5><ul><li>Spotify was available only after enabling 3rd party repositories, installing updates and rebooting the whole system then installing discovery on which installing snap backend, rebooting again and fallback to search engine usage where rpm package was found, lots of loops until Flatpak backend was discovered for Discovery and Spotify Flathub URL was added (tutorial online)</li><li>When opening system settings for 2nd time it stayed on the last open section (note - the system was restarted before), it was not clear how to go back to the settings menu to find where to change the user picture.</li></ul><h5 id="zorin">Zorin</h5><ul><li>Very slow ISO download.</li><li>Installing steam errored several times regarding “unmet dependencies”, took a while to try to update the system, then reboot and only then to succeed in steam install.</li></ul><h5 id="deepin">Deepin</h5><ul><li>It was confusing which app actually was meant for document creation and even then it was hard to find how to export to pdf.</li><li>Steam was not in the app store, had to be downloaded separately, afterward when doing right-click on the app to uninstall, the app store would throw an error, eventually reopening the same .deb and then finding the “remove” solved the issue.</li></ul><h5 id="kde-neon">KDE Neon</h5><ul><li>Very slow ISO download.</li><li>No default picture editing software had to download separately.</li></ul><h5 id="pclinuxos">PCLinuxOS</h5><ul><li>Spotify was preinstalled but the software manager UI was so overwhelming that it took a long time to notice it.</li><li>After installing Telegram it did not appear in the app list until the reinstall.</li><li>Installing Steam required using a search engine to find that the only way to get it is to install Playonlinux first and only then to install Steam inside it.</li></ul><h5 id="regolith">Regolith</h5><ul><li>It was a first time the subject used tiling window manager, no onboarding was available so all actions were incredibly slow</li></ul><h3 id="final-results">Final Results</h3><p>I have decided to provide two sets of results - for overall score and score without installation evaluation for cases where the long-term use is more important than the time to get it running.</p><p>Bear in mind that this study only affected the general light-use cases of daily software consumption. Therefore, I will not give any further opinions as to why one is better than the other, and vice versa, since my personal insights may not be consistent with the general needs of everyday users.</p><p>The key problem tends to be a basic UX of software installation and management. Proper section naming or broader default repositories would solve most of the problems that day-to-day users are facing if sticking to Linux.</p><p>A thought regarding Windows/macOS score - there may be some issues with the way the test was designed, but I think that these results are pretty accurate.</p><h4 id="overall-score">Overall Score</h4><table><thead><tr><th style="text-align:center"><strong>Distro/OS</strong></th><th style="text-align:center"><strong>Version</strong></th><th style="text-align:center"><strong>DE</strong></th><th style="text-align:center"><strong>Score</strong></th></tr></thead><tbody><tr><td style="text-align:center">Pop OS</td><td style="text-align:center">20.04</td><td style="text-align:center">Gnome</td><td style="text-align:center">81</td></tr><tr><td style="text-align:center">Mint</td><td style="text-align:center">19.3</td><td style="text-align:center">Cinnamon</td><td style="text-align:center">75</td></tr><tr><td style="text-align:center">Ubuntu</td><td style="text-align:center">20.04</td><td style="text-align:center">Gnome</td><td style="text-align:center">72</td></tr><tr><td style="text-align:center">Deepin</td><td style="text-align:center">20 Beta</td><td style="text-align:center">Deepin</td><td style="text-align:center">71</td></tr><tr><td style="text-align:center">Zorin</td><td style="text-align:center">15.2</td><td style="text-align:center">Gnome</td><td style="text-align:center">65</td></tr><tr><td style="text-align:center">Manjaro</td><td style="text-align:center">20</td><td style="text-align:center">XFCE</td><td style="text-align:center">61</td></tr><tr><td style="text-align:center">MacOS</td><td style="text-align:center">Catalina</td><td style="text-align:center">Default</td><td style="text-align:center">59</td></tr><tr><td style="text-align:center">Regolith</td><td style="text-align:center">1.4</td><td style="text-align:center">i3</td><td style="text-align:center">58</td></tr><tr><td style="text-align:center">Elementary</td><td style="text-align:center">5.1.3</td><td style="text-align:center">Pantheon</td><td style="text-align:center">54</td></tr><tr><td style="text-align:center">KDE Neon</td><td style="text-align:center">20200430</td><td style="text-align:center">KDE</td><td style="text-align:center">53</td></tr><tr><td style="text-align:center">Windows</td><td style="text-align:center">10</td><td style="text-align:center">Default</td><td style="text-align:center">53</td></tr><tr><td style="text-align:center">Debian</td><td style="text-align:center">10.3</td><td style="text-align:center">Gnome</td><td style="text-align:center">53</td></tr><tr><td style="text-align:center">Solus</td><td style="text-align:center">4.1</td><td style="text-align:center">Budgie</td><td style="text-align:center">51</td></tr><tr><td style="text-align:center">Fedora</td><td style="text-align:center">32</td><td style="text-align:center">Gnome</td><td style="text-align:center">50</td></tr><tr><td style="text-align:center">PCLinuxOS</td><td style="text-align:center">2020.03</td><td style="text-align:center">MATE</td><td style="text-align:center">42</td></tr><tr><td style="text-align:center">MX Linux</td><td style="text-align:center">19.1</td><td style="text-align:center">XFCE</td><td style="text-align:center">34</td></tr><tr><td style="text-align:center">ArcoLinux</td><td style="text-align:center">20.4.11</td><td style="text-align:center">XFCE</td><td style="text-align:center">15</td></tr><tr><td style="text-align:center">CentOS</td><td style="text-align:center">8.1</td><td style="text-align:center">Gnome</td><td style="text-align:center">12</td></tr><tr><td style="text-align:center">Kali</td><td style="text-align:center">2020.1b</td><td style="text-align:center">Gnome</td><td style="text-align:center">10</td></tr><tr><td style="text-align:center">openSUSE</td><td style="text-align:center">15.1</td><td style="text-align:center">Gnome</td><td style="text-align:center">5</td></tr><tr><td style="text-align:center">Antix</td><td style="text-align:center">19</td><td style="text-align:center">Fluxbox</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">ReactOS</td><td style="text-align:center">0.4.13</td><td style="text-align:center">Explorer</td><td style="text-align:center">0</td></tr></tbody></table><h4 id="overall-score-without-install">Overall Score Without Install</h4><table><thead><tr><th style="text-align:center"><strong>Distro/OS</strong></th><th style="text-align:center"><strong>Version</strong></th><th style="text-align:center"><strong>DE</strong></th><th style="text-align:center"><strong>Score</strong></th></tr></thead><tbody><tr><td style="text-align:center">Deepin</td><td style="text-align:center">20 Beta</td><td style="text-align:center">Deepin</td><td style="text-align:center">64</td></tr><tr><td style="text-align:center">Pop OS</td><td style="text-align:center">20.04</td><td style="text-align:center">Gnome</td><td style="text-align:center">61</td></tr><tr><td style="text-align:center">Ubuntu</td><td style="text-align:center">20.04</td><td style="text-align:center">Gnome</td><td style="text-align:center">61</td></tr><tr><td style="text-align:center">Zorin</td><td style="text-align:center">15.2</td><td style="text-align:center">Gnome</td><td style="text-align:center">56</td></tr><tr><td style="text-align:center">MacOS</td><td style="text-align:center">Catalina</td><td style="text-align:center">Default</td><td style="text-align:center">56</td></tr><tr><td style="text-align:center">Mint</td><td style="text-align:center">19.3</td><td style="text-align:center">Cinnamon</td><td style="text-align:center">53</td></tr><tr><td style="text-align:center">Windows</td><td style="text-align:center">10</td><td style="text-align:center">Default</td><td style="text-align:center">49</td></tr><tr><td style="text-align:center">KDE Neon</td><td style="text-align:center">20200430</td><td style="text-align:center">KDE</td><td style="text-align:center">47</td></tr><tr><td style="text-align:center">Debian</td><td style="text-align:center">10.3</td><td style="text-align:center">Gnome</td><td style="text-align:center">45</td></tr><tr><td style="text-align:center">Manjaro</td><td style="text-align:center">20</td><td style="text-align:center">XFCE</td><td style="text-align:center">42</td></tr><tr><td style="text-align:center">Regolith</td><td style="text-align:center">1.4</td><td style="text-align:center">i3</td><td style="text-align:center">37</td></tr><tr><td style="text-align:center">Solus</td><td style="text-align:center">4.1</td><td style="text-align:center">Budgie</td><td style="text-align:center">37</td></tr><tr><td style="text-align:center">Elementary</td><td style="text-align:center">5.1.3</td><td style="text-align:center">Pantheon</td><td style="text-align:center">36</td></tr><tr><td style="text-align:center">Fedora</td><td style="text-align:center">32</td><td style="text-align:center">Gnome</td><td style="text-align:center">33</td></tr><tr><td style="text-align:center">PCLinuxOS</td><td style="text-align:center">2020.03</td><td style="text-align:center">MATE</td><td style="text-align:center">26</td></tr><tr><td style="text-align:center">MX Linux</td><td style="text-align:center">19.1</td><td style="text-align:center">XFCE</td><td style="text-align:center">21</td></tr><tr><td style="text-align:center">ArcoLinux</td><td style="text-align:center">20.4.11</td><td style="text-align:center">XFCE</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">CentOS</td><td style="text-align:center">8.1</td><td style="text-align:center">Gnome</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">Kali</td><td style="text-align:center">2020.1b</td><td style="text-align:center">Gnome</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">openSUSE</td><td style="text-align:center">15.1</td><td style="text-align:center">Gnome</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">Antix</td><td style="text-align:center">19</td><td style="text-align:center">Fluxbox</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">ReactOS</td><td style="text-align:center">0.4.13</td><td style="text-align:center">Explorer</td><td style="text-align:center">0</td></tr></tbody></table><p><a href="https://lawzava.com/assets/posts/state-of-linux-usability-2020-raw-data.pdf" title="Raw Results" target="_blank" rel="noopener">Raw Results</a></p><h3 id="final-thoughts">Final Thoughts</h3><p>In the end, one of the key reasons why we have a handful of Linux distributions available is that each of them is designed to solve a specific problem and serves a specific function for a specific audience.</p><p>A lot of multi-purpose distros aim to be Windows-like or MacOS-like to ease the Linux transition. Although there is nothing wrong with it, the true strength of Linux lies in its uniqueness, not its similarity, and I think that this uniqueness could be “sold” to the consumer as long as it is presented/explained correctly (i.e. recall your first move from Symbian to Android or Windows to macOS).</p><p>However, I do believe that the Linux ecosystem as a whole is certainly ready to replace Windows / macOS not just for day-to-day users, but also for educational/corporate/government use.</p><p>On a final note, I’d like to encourage you to try using a Linux system for a week and if you’re already a Linux user then go and make someone else use Linux for a week!</p><div class="highlight"><pre style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ echo <span style="color:#87ceeb">'#preachingpenguins'</span>
+$ exit
+</code></pre></div></article>
+
+</main>
+
+
+<footer class="w-full text-center p-4 pin-b text-xs" style= "position: fixed; bottom: 0; width: 100%">
+<p>No Trackers. No Cookies. No Visit Logs.</p>
+<p>Copyright © 2017, Law Zava, all rights reserved.</p>
+</footer>
+</div>
+
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon="{&quot;rayId&quot;:&quot;7951dde4bff53adc&quot;,&quot;token&quot;:&quot;8cffec5803864b5dad240756e720c736&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+
+</div>
+
+
+</body>
+
+
+
+
+
+  <script src="https://cldup.com/S6Ptkwu_qA.js"></script>
+      <script id="rendered-js">
+// ParticlesJS Config.
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 700 } },
+
+
+    "color": {
+      "value": "#ffffff",
+	  },
+
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000" },
+
+      "polygon": {
+        "nb_sides": 5 } },
+
+
+    "opacity": {
+      "value": 0.1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.1,
+        "opacity_min": 0.1,
+        "sync": false } },
+
+
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 10,
+        "size_min": 0.1,
+        "sync": false } },
+
+
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#00ff00",
+      "opacity": 0.1,
+      "width": 1 },
+
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200 } } },
+
+
+
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab" },
+
+      "onclick": {
+        "enable": true,
+        "mode": "push" },
+
+      "resize": true },
+
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 0.5 } },
+
+
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3 },
+
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4 },
+
+      "push": {
+        "particles_nb": 4 },
+
+      "remove": {
+        "particles_nb": 2 } } },
+
+
+
+  "retina_detect": true });
+//# sourceURL=pen.js
+    </script>
+
+  
+
+  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-550eae0ce567d3d9182e33cee4e187761056020161aa87e3ef74dc467972c555.js"></script>
+  
+  </html>
